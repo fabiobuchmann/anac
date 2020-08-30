@@ -1,0 +1,110 @@
+{
+  "id": "e788413b-478b-4546-92dc-2fa6b7a9c3c4",
+  "version": "2.0",
+  "name": "anac",
+  "url": "https://www.wiktionary.org",
+  "tests": [{
+    "id": "39b2a0f6-99a3-4e69-9630-5dd52d537eb3",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "fa3636e1-b65f-4fa5-bbf1-4f4f8e33da5f",
+    "name": "anac",
+    "commands": [{
+      "id": "6d8f478f-5b3c-42a7-a312-a24c3d68d5e2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e161496-d9eb-4d22-8f47-9f44c341c35a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "768x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98b8ae37-2bf9-4923-bddf-088fa7183946",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//body[@id='www-wiktionary-org']/div[2]/form/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64d1dc74-7362-4364-a858-2c6135f7dac6",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//body[@id='www-wiktionary-org']/div[2]/form/fieldset/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "apple"
+    }, {
+      "id": "5b699e38-9313-40d3-a836-9517181158b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.formBtn > img",
+      "targets": [
+        ["css=.formBtn > img", "css:finder"],
+        ["xpath=//img[@alt='Search']", "xpath:img"],
+        ["xpath=//body[@id='www-wiktionary-org']/div[2]/form/fieldset/button/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84fd10d7-3f69-4b12-a030-5c6addfbc4ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=ol",
+      "targets": [
+        ["css=ol", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/ol", "xpath:idRelative"],
+        ["xpath=//ol", "xpath:position"],
+        ["xpath=//ol[contains(.,'(Alimentação) maçã\na árvore frutífera do gênero Malus domestica\na madeira da sobre referida árvore')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "977d5f20-ec06-46db-adfc-e075b3d7840e",
+      "comment": "",
+      "command": "storeValue",
+      "target": "css=ol > li:nth-child(2)",
+      "targets": [
+        ["css=ol > li:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/ol/li[2]", "xpath:idRelative"],
+        ["xpath=//ol/li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'a árvore frutífera do gênero Malus domestica')]", "xpath:innerText"]
+      ],
+      "value": "variavel"
+    }, {
+      "id": "2c465e0f-b8d1-41c0-ab5d-07321aaaf02b",
+      "comment": "",
+      "command": "echo",
+      "target": "variavel",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ef4806a4-cab3-41aa-8e26-e6fe8f2fa622",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["39b2a0f6-99a3-4e69-9630-5dd52d537eb3"]
+  }],
+  "urls": ["https://www.wiktionary.org/"],
+  "plugins": []
+}
