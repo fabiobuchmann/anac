@@ -40,3 +40,4 @@ Funcionalidade: Criar conta
         Então o cliente deve ser redirecionado para a página "O endereço de e-mail já está sendo utilizado"
         E o sistema exibe a mensagem " Você indicou que é um cliente novo, mas já existe uma conta com o e-mail anacvasconcelos@gmail.com. Se já tem conta em algum site da Amazon, pode usar a mesma conta e senha para fazer o login na amazon.com.br."
         
+// commit numa mudança
